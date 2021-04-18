@@ -14,7 +14,7 @@
 		640241E7262CC15E00367595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 640241E6262CC15E00367595 /* Assets.xcassets */; };
 		640241EA262CC15E00367595 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640241E8262CC15E00367595 /* LaunchScreen.storyboard */; };
 		640241F9262CC26A00367595 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640241F8262CC26A00367595 /* MainTabController.swift */; };
-		640241FC262CC4B800367595 /* redme.md in Resources */ = {isa = PBXBuildFile; fileRef = 640241FB262CC4B700367595 /* redme.md */; };
+		640241FC262CC4B800367595 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 640241FB262CC4B700367595 /* readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		640241E9262CC15E00367595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		640241EB262CC15E00367595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		640241F8262CC26A00367595 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
-		640241FB262CC4B700367595 /* redme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = redme.md; sourceTree = "<group>"; };
+		640241FB262CC4B700367595 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				640241DC262CC15D00367595 /* instaclone */,
-				640241FB262CC4B700367595 /* redme.md */,
+				640241FB262CC4B700367595 /* readme.md */,
 				640241DB262CC15D00367595 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -178,7 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				640241FC262CC4B800367595 /* redme.md in Resources */,
+				640241FC262CC4B800367595 /* readme.md in Resources */,
 				640241EA262CC15E00367595 /* LaunchScreen.storyboard in Resources */,
 				640241E7262CC15E00367595 /* Assets.xcassets in Resources */,
 				640241E5262CC15D00367595 /* Main.storyboard in Resources */,
