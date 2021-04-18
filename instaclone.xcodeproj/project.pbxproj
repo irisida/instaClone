@@ -13,6 +13,8 @@
 		640241E5262CC15D00367595 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640241E3262CC15D00367595 /* Main.storyboard */; };
 		640241E7262CC15E00367595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 640241E6262CC15E00367595 /* Assets.xcassets */; };
 		640241EA262CC15E00367595 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640241E8262CC15E00367595 /* LaunchScreen.storyboard */; };
+		640241F9262CC26A00367595 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640241F8262CC26A00367595 /* MainTabController.swift */; };
+		640241FC262CC4B800367595 /* redme.md in Resources */ = {isa = PBXBuildFile; fileRef = 640241FB262CC4B700367595 /* redme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		640241E6262CC15E00367595 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		640241E9262CC15E00367595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		640241EB262CC15E00367595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		640241F8262CC26A00367595 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		640241FB262CC4B700367595 /* redme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = redme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				640241DC262CC15D00367595 /* instaclone */,
+				640241FB262CC4B700367595 /* redme.md */,
 				640241DB262CC15D00367595 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +61,12 @@
 		640241DC262CC15D00367595 /* instaclone */ = {
 			isa = PBXGroup;
 			children = (
+				640241F7262CC1A300367595 /* Model */,
+				640241F6262CC19900367595 /* View */,
+				640241F5262CC19600367595 /* ViewModel */,
+				640241F4262CC19300367595 /* Controller */,
+				640241F3262CC19000367595 /* API */,
+				640241F2262CC18800367595 /* Utils */,
 				640241DD262CC15D00367595 /* AppDelegate.swift */,
 				640241DF262CC15D00367595 /* SceneDelegate.swift */,
 				640241E1262CC15D00367595 /* ViewController.swift */,
@@ -65,6 +76,49 @@
 				640241EB262CC15E00367595 /* Info.plist */,
 			);
 			path = instaclone;
+			sourceTree = "<group>";
+		};
+		640241F2262CC18800367595 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		640241F3262CC19000367595 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		640241F4262CC19300367595 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				640241F8262CC26A00367595 /* MainTabController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		640241F5262CC19600367595 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		640241F6262CC19900367595 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		640241F7262CC1A300367595 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				640241FC262CC4B800367595 /* redme.md in Resources */,
 				640241EA262CC15E00367595 /* LaunchScreen.storyboard in Resources */,
 				640241E7262CC15E00367595 /* Assets.xcassets in Resources */,
 				640241E5262CC15D00367595 /* Main.storyboard in Resources */,
@@ -139,6 +194,7 @@
 			files = (
 				640241E2262CC15D00367595 /* ViewController.swift in Sources */,
 				640241DE262CC15D00367595 /* AppDelegate.swift in Sources */,
+				640241F9262CC26A00367595 /* MainTabController.swift in Sources */,
 				640241E0262CC15D00367595 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
