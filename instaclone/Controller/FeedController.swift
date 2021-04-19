@@ -11,7 +11,7 @@ class FeedController: UICollectionViewController {
     
     private let reuseIdentifier = "Cell"
     
-    //MARK: - Lifecycle
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ class FeedController: UICollectionViewController {
         
     }
     
-    //MARK: - Helper Functions
+    // MARK: - Helper Functions
     
     func configureUI() {
         collectionView.backgroundColor = .white
@@ -28,7 +28,7 @@ class FeedController: UICollectionViewController {
     }
 }
 
-//MARK: - UICollectionViewDataSource
+// MARK: - UICollectionViewDataSource
 
 extension FeedController  {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -41,7 +41,7 @@ extension FeedController  {
     }
 }
 
-//MARK: - UICollectionViewDelegateFlowLayout
+// MARK: - UICollectionViewDelegateFlowLayout
 
 extension FeedController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

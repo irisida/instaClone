@@ -9,7 +9,7 @@ import UIKit
 
 class FeedCell: UICollectionViewCell {
     
-    //MARK: - Properties
+    // MARK: - Properties
     
     private let profileImageView: UIImageView = {
         let iv = UIImageView()
@@ -83,7 +83,7 @@ class FeedCell: UICollectionViewCell {
         return label
     }()
     
-    //MARK: - Lifecycle
+    // MARK: - Lifecycle
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -117,7 +117,7 @@ class FeedCell: UICollectionViewCell {
         fatalError("init(code) not implemented" )
     }
     
-    //MARK: - Helper Functions
+    // MARK: - Helper Functions
     
     func configureActionButtons() {
         let stackView = UIStackView(arrangedSubviews: [likeButton, commentButton, shareButton])
@@ -128,7 +128,7 @@ class FeedCell: UICollectionViewCell {
         stackView.anchor(top: postImageView.bottomAnchor, width: 120, height: 50)
     }
     
-    //MARK: - Actions
+    // MARK: - Actions
     
     @objc func didTapUsername() {
         print("DEBUG - did tap username")

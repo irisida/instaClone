@@ -9,7 +9,7 @@ import UIKit
 
 class MainTabController: UITabBarController {
     
-    //MARK: - Lifecycle
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +17,7 @@ class MainTabController: UITabBarController {
         configureViewControllers()
     }
     
-    //MARK: - Helper Functions
+    // MARK: - Helper Functions
     
     func configureViewControllers() {
         view.backgroundColor = .white
