@@ -7,6 +7,30 @@
 
 import UIKit
 
+extension UIButton {
+    func attributedTitle(partOne: String, partTwo: String) {
+        // partOne characterised by plain text
+        let atts: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor(white: 1,
+                                                                             alpha: 0.7),
+                                                   .font: UIFont.systemFont(ofSize: 16)]
+        
+        // partTWO characterised by bold text
+        let boldAtts: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor(white: 1,
+                                                                                 alpha: 0.8),
+                                                       .font: UIFont.boldSystemFont(ofSize: 16)]
+        
+        // build the title from the composites
+        let attributedTitle = NSMutableAttributedString(string: "\(partOne) ",
+                                                        attributes: atts)
+        attributedTitle.append(NSAttributedString(string: "\(partTwo)",
+                                                  attributes: boldAtts))
+        
+        // assign the composites to the button title
+        setAttributedTitle(attributedTitle, for: .normal)
+    }
+}
+
+
 extension UIView {
     func anchor(top: NSLayoutYAxisAnchor? = nil,
                 left: NSLayoutXAxisAnchor? = nil,

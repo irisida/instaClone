@@ -18,27 +18,15 @@ class LoginController: UIViewController {
     }()
     
     private let emailTextField: UITextField = {
-        let tf = UITextField()
-        tf.borderStyle = .none
-        tf.textColor = .white
-        tf.keyboardAppearance = .dark
+        let tf = CustomTextField(placeholder: "Email")
         tf.keyboardType = .emailAddress
-        tf.backgroundColor = UIColor(white: 1, alpha: 0.15)
-        tf.setHeight(50)
-        tf.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [.foregroundColor: UIColor(white: 1, alpha: 0.7)])
         return tf
     }()
     
     private let passwordTextField: UITextField = {
-        let tf = UITextField()
-        tf.borderStyle = .none
-        tf.textColor = .white
-        tf.keyboardAppearance = .dark
+        let tf = CustomTextField(placeholder: "Password")
         tf.keyboardType = .default
         tf.isSecureTextEntry = true
-        tf.backgroundColor = UIColor(white: 1, alpha: 0.07)
-        tf.setHeight(50)
-        tf.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [.foregroundColor: UIColor(white: 1, alpha: 0.7)])
         return tf
     }()
     
@@ -55,37 +43,15 @@ class LoginController: UIViewController {
     
     private let forgotPasswordButton: UIButton = {
         let button = UIButton(type: .system)
-        
-        // create attributes for plain text part
-        let atts: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor(white: 1, alpha: 0.6), .font: UIFont.systemFont(ofSize: 16)]
-        // create attrinutes for the bold text part
-        let boldAtts: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor(white: 1, alpha: 0.7), .font: UIFont.boldSystemFont(ofSize: 16)]
-        
-        // build the title from the composites
-        let attributedTitle = NSMutableAttributedString(string: "Forgot your password? ", attributes: atts)
-        attributedTitle.append(NSAttributedString(string: "Get help Signing In", attributes: boldAtts))
-        
-        // assign the composites to the button title
-        button.setAttributedTitle(attributedTitle, for: .normal)
-        
+        button.attributedTitle(partOne: "Forgot your password",
+                               partTwo: "Get help Signing In")
         return button
     }()
     
     private let dontHaveAccountButton: UIButton = {
         let button = UIButton(type: .system)
-        
-        // create attributes for plain text part
-        let atts: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor(white: 1, alpha: 0.7), .font: UIFont.systemFont(ofSize: 16)]
-        // create attrinutes for the bold text part
-        let boldAtts: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor(white: 1, alpha: 0.7), .font: UIFont.boldSystemFont(ofSize: 16)]
-        
-        // build the title from the composites
-        let attributedTitle = NSMutableAttributedString(string: "Don't have an account?  ", attributes: atts)
-        attributedTitle.append(NSAttributedString(string: "Sign Up", attributes: boldAtts))
-        
-        // assign the composites to the button title
-        button.setAttributedTitle(attributedTitle, for: .normal)
-        
+        button.attributedTitle(partOne: "Don't have an account?",
+                               partTwo: "Sign Up")
         return button
     }()
     
