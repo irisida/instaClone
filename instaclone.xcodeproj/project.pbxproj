@@ -25,6 +25,7 @@
 		64024215262E157C00367595 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64024214262E157C00367595 /* LoginController.swift */; };
 		64024218262E158A00367595 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64024217262E158A00367595 /* RegisterController.swift */; };
 		6402421B262E2BD000367595 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6402421A262E2BD000367595 /* CustomTextField.swift */; };
+		6402421E262F055E00367595 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6402421D262F055E00367595 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		64024214262E157C00367595 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		64024217262E158A00367595 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		6402421A262E2BD000367595 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		6402421D262F055E00367595 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			children = (
 				6402420D262CE09800367595 /* FeedCell.swift */,
 				6402421A262E2BD000367595 /* CustomTextField.swift */,
+				6402421D262F055E00367595 /* CustomButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				640241F9262CC26A00367595 /* MainTabController.swift in Sources */,
 				64024208262CC61200367595 /* NotificationsController.swift in Sources */,
 				64024211262DF4E600367595 /* Extensions.swift in Sources */,
+				6402421E262F055E00367595 /* CustomButton.swift in Sources */,
 				640241E0262CC15D00367595 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
